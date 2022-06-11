@@ -1,6 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-
-
+import { useState, useEffect } from "react";
 //API
 import API from '../API'
 
@@ -40,8 +38,9 @@ export const useHomeFetch = () => {
         setLoading(false);
     };
 
-    //Search
+    //Search and initial
     useEffect (()=> {
+        console.log("Grabbing from API")
         setState(initialState);
         fetchMovies(1, searchTerm);
     },[searchTerm])
@@ -52,6 +51,8 @@ export const useHomeFetch = () => {
         fetchMovies(state.page + 1, searchTerm);
         setIsLoading(false);
     },[isLoading, searchTerm, state.page])
+
+
 
     return { state, loading, error, searchTerm, setSearchTerm, setIsLoading}
 };

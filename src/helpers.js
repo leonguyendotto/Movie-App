@@ -13,3 +13,4 @@ export const convertMoney = money => {
   });
   return formatter.format(money);
 };
+
