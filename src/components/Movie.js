@@ -14,7 +14,6 @@ import Actor from "./Actor";
 //Hook
 import { useMovieFetch } from "../hooks/useMovieFetch";
 
-
 //Image
 import NoImage from '../images/no_image.jpg';
 

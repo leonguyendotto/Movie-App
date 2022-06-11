@@ -1,4 +1,4 @@
-import React, {useEffect,useState, useRef, Component} from "react";
+import React, {Component} from "react";
 import PropTypes from 'prop-types'
 //Image
 import searchIcon from '../../images/search-icon.svg';
