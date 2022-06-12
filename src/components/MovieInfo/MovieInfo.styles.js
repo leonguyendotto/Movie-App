@@ -73,5 +73,19 @@ export const Text = styled.div`
         }
     }
 
+    .genres{
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0.5rem;
+        }
+
+        @media screen and (max-width: 768px){
+            p {
+                margin: 0.2rem;
+            }
+        }
+    }
+
 
 `;

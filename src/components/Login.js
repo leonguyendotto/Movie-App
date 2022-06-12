@@ -25,7 +25,6 @@ const Login = () => {
                 username,
                 password
             );
-            console.log(sessionId);
             setUser ({ sessionId: sessionId.session_id, username});
             
             navigate('/');
@@ -45,6 +44,7 @@ const Login = () => {
 
     return (
         <Wrapper>
+            {error && <div className="error">Something went wrong, please try again!</div>}
             <label>Username:</label>
             <input
                 type='text'
