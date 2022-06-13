@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import RMDBLogo from '../../images/react-movie-logo.svg'
 import TMDBLogo from '../../images/tmdb_logo.svg'
+import FooterBG from '../../images/footer_bg.jpg'
 
 import { Wrapper, Content, LogoImg, TMDBLogoImg } from "./Header.styles";
 
@@ -14,7 +15,7 @@ const Header = () => {
     
 
     return (
-        <Wrapper>
+        <Wrapper className='header' style={{backgroundImage:`url(${FooterBG})`}}>
             <Content>
                 <Link to='/'>
                     <LogoImg src={RMDBLogo} alt='rmdb-logo' />

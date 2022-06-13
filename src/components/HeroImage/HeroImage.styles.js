@@ -42,7 +42,7 @@ export const Text = styled.div`
     h1 {
         font-size: var(--fontSuperBig);
 
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 768px) {
             font-size: var(--fontBig);
         }
     }
@@ -50,12 +50,12 @@ export const Text = styled.div`
     p {
         font-size: var(--fontMed);
 
-        @media screen and (max-width:720px){
+        @media screen and (max-width:768px){
             font-size: var(--fontSmall);
         }
     }
 
-    @media screen and (max-width:720px) {
+    @media screen and (max-width:768px) {
         max-width: 100%;
     }
 

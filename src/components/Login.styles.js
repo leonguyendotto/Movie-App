@@ -21,6 +21,7 @@ export const Wrapper = styled.div`
     }
 
     .error {
-        color: red;
+        color: red
     }
 `;
+

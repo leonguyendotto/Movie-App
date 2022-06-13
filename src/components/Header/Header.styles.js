@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    background: var(--darkGrey);
-    padding: 0 20px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 40px;
 
 `;
 
@@ -22,19 +24,19 @@ export const Content = styled.div`
 `;
 
 export const LogoImg  = styled.img`
-    width: 200px;
+    width: 60px;
 
     @media screen and (max-width: 500px){
-        width: 150px;
+        width: 70px;
     }
 `;
 
 export const TMDBLogoImg = styled.img`
-    width: 100px;
+    width: 60px;
 
 
     @media screen and (max-width:500px) {
-        width: 80px;
+        width: 70px;
     }
 
 `;
