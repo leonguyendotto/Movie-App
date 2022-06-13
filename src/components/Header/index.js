@@ -12,6 +12,9 @@ import { Context } from "../../context";
 const Header = () => {
 
     const[user] = useContext(Context);
+    function refreshPage() {
+        window.location.reload(false);
+      }
     
 
     return (
@@ -20,14 +23,16 @@ const Header = () => {
                 <Link to='/'>
                     <LogoImg src={RMDBLogo} alt='rmdb-logo' />
                 </Link>
-                {user ? (
-                    <span> Logged in as: {user.username}</span>
-                ) : (
-                    <Link to='/login'>
-                        <span>Log in</span>
-                    </Link>
-                )}
-                <TMDBLogoImg src={TMDBLogo} alt='tmdb-logo'/>
+                <div className="menu">
+                    {user ?  (
+                        <button onClick={refreshPage}>Log Out</button>
+                    ) : (
+                        <Link to='/login'>
+                            <button>Log in</button>
+                        </Link>
+                    )}
+                    <TMDBLogoImg src={TMDBLogo} alt='tmdb-logo'/>
+                </div>
             </Content>
         </Wrapper>
     );

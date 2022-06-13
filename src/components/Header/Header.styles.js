@@ -17,9 +17,29 @@ export const Content = styled.div`
     margin: 0 auto;
     color: var(--white);
 
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
     a {
         color: var(--white);
         text-decoration: none;
+    }
+
+    button {
+        text-transform: capitalize;
+        color: white;
+        font-weight: bold;
+        background-color: transparent;
+        border: solid 1px #fff;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin-right: 2rem;
+    }
+
+    button:hover {
+        color: var(--mainColor)
     }
 `;
 
