@@ -3,6 +3,10 @@ import React, {useState} from "react";
 const Rating = ({callback}) => {
     const [value, setValue] = useState(5);
 
+    function Message (){
+        alert('Thanks for your rating')
+    }
+
     return (
         <div>
             <input
@@ -13,8 +17,8 @@ const Rating = ({callback}) => {
                 onChange={e => setValue(e.currentTarget.value)}
             />
             {value}
-            <p>
-                <button onClick={()=>callback(value)}>Rating</button>
+            <p className="message">
+                <button onClick={()=>{callback(value);Message()}}>Rating</button>
             </p>
         </div>
     )

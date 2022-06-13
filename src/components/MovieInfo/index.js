@@ -68,7 +68,8 @@ const MovieInfo = ({movie}) => {
                     {user && (
                     <div>
                         <p>Rate Movie</p>
-                        <Rating callback={handleRating}/>
+                        <Rating callback={handleRating}
+                        />
                     </div>
                     )}
                 </Text>
