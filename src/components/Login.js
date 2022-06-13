@@ -45,20 +45,27 @@ const Login = () => {
     return (
         <Wrapper>
             {error && <div className="error">Something went wrong, please try again!</div>}
-            <label>Username:</label>
-            <input
-                type='text'
-                value={username}
-                name="username"
-                onChange={handleInput}
-            />
-            <input
-                type='password'
-                value={password}
-                name="password"
-                onChange={handleInput}
-            />
+            <h3>Please use your TMDB account</h3>
+            <div>
+                <label>Username:</label>
+                <input
+                    type='text'
+                    value={username}
+                    name="username"
+                    onChange={handleInput}
+                    />
+                <label>Password:</label>
+                <input
+                    type='password'
+                    value={password}
+                    name="password"
+                    onChange={handleInput}
+                    />
+            </div>
             <Button text ='Login' callback={handleSubmit}/>
+            <div className="cta">
+                <p>If you do not have an account, registering for an account is free and simple. <a href="https://www.themoviedb.org/signup" target="_blank">Click here</a> to get started.</p>
+            </div>
         </Wrapper>
     )
 }

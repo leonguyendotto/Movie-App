@@ -23,5 +23,15 @@ export const Wrapper = styled.div`
     .error {
         color: red
     }
+
+    .cta p{
+        color: var(--darkGrey);
+        text-decoration: none;
+    }
+
+    .cta a{
+        text-decoration: none;
+        color: #01b4e4;
+    }
 `;
 
