@@ -12,6 +12,7 @@ import { Context } from "../../context";
 const Header = () => {
 
     const[user] = useContext(Context);
+    
     function refreshPage() {
         window.location.reload(false);
       }
@@ -25,7 +26,11 @@ const Header = () => {
                 </Link>
                 <div className="menu">
                     {user ?  (
-                        <button onClick={refreshPage}>Log Out</button>
+                        <div>
+                            <button onClick={refreshPage}>Log Out</button>
+                            <span className='loggedin'> Logged in as: {user.username}</span>
+                        </div>
+                       
                     ) : (
                         <Link to='/login'>
                             <button>Log in</button>
