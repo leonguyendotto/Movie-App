@@ -10,6 +10,7 @@ import BreadCrumb from "./BreadCrumb";
 import MovieInfo from "./MovieInfo";
 import InfoBar from "./InfoBar";
 import Actor from "./Actor";
+import Trailer from "./Video";
 
 //Hook
 import { useMovieFetch } from "../hooks/useMovieFetch";
@@ -31,6 +32,7 @@ const Movie = () => {
             <BreadCrumb movieTitle={movie.original_title} />
             <MovieInfo movie={movie} />
             <InfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue}/>
+            {/* <Trailer/> Will insert in the future */}
             <Grid header='Actors'>
                 {movie.actors.map(actor => (
                     <Actor

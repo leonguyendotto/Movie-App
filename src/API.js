@@ -32,7 +32,7 @@ const apiSettings = {
   },
 
   fetchVideo: async movieId => {
-    const videoEndpoint = `${API_URL}movie/${movieId}/video?api_key=${API_KEY}`;
+    const videoEndpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}&append_to_response=videos`;
     return await (await fetch(videoEndpoint)).json();
   },
 
